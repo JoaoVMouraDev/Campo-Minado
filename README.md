@@ -58,7 +58,7 @@ Os melhores tempos, o nome do jogador e o tema selecionado ficam salvos no `loca
 ## Pré-visualização
 
 Tela do Ranking: 
-<img width="1280" height="921" alt="ranking" src="https://github.com/user-attachments/assets/75890936-01d1-4685-b02e-2281ebd1bf2c"/>"
+<img width="1280" height="921" alt="ranking" src="https://github.com/user-attachments/assets/75890936-01d1-4685-b02e-2281ebd1bf2c"/>
 <br>
 
 Tela de Vitoria: 
@@ -73,6 +73,8 @@ Tela mostrando o cronometro:
 
 <br>
 TEMAS:
+<br>
+<br>
 <br>
 
 Tema classico:
