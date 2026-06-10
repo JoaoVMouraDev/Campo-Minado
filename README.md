@@ -65,7 +65,8 @@ Tela de Vitoria:
 <img width="1280" height="921" alt="vitoria" src="https://github.com/user-attachments/assets/a863a465-a544-49ab-843b-ad8d98104957" />
 
 <br>
-Tela de derrota<img width="1287" height="934" alt="derrota" src="https://github.com/user-attachments/assets/066d3950-7d6e-4deb-a184-853a0b863b27" />
+Tela de derrota<img width="1222" height="939" alt="image" src="https://github.com/user-attachments/assets/cd206c2b-d1e4-429b-833c-a576141b371a" />
+
 
 <br>
 Tela mostrando o cronometro:
