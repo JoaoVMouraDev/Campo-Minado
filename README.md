@@ -57,13 +57,31 @@ Os melhores tempos, o nome do jogador e o tema selecionado ficam salvos no `loca
 
 ## Pré-visualização
 
-Tela de vitoria do Campo Minado<img width="1280" height="921" alt="ranking" src="https://github.com/user-attachments/assets/75890936-01d1-4685-b02e-2281ebd1bf2c"/>" />
+Tela do Ranking: 
+<img width="1280" height="921" alt="ranking" src="https://github.com/user-attachments/assets/75890936-01d1-4685-b02e-2281ebd1bf2c"/>" />
 <br>
 
-<img width="457" height="489" alt="Partida de Campo Minado" src="<img width="1280" height="921" alt="cronometro" src="https://github.com/user-attachments/assets/89843b61-fc7f-4284-b1f5-673128bbff93" />
-<br>
+Tela de Vitoria: 
+<img width="1280" height="921" alt="vitoria" src="https://github.com/user-attachments/assets/a863a465-a544-49ab-843b-ad8d98104957" />
 
-<img width="445" height="485" alt="Resultado de uma partida" src="https://github.com/user-attachments/assets/b1abec2b-8a83-45b4-89ba-1eeae4b9af76" />
+<br>
+Tela de derrota<img width="1287" height="934" alt="derrota" src="https://github.com/user-attachments/assets/066d3950-7d6e-4deb-a184-853a0b863b27" />
+
+<br>
+Tela mostrando o cronometro:
+<img width="1280" height="921" alt="cronometro" src="https://github.com/user-attachments/assets/a850bc03-1669-468d-8bdc-c8cbb45a2f2e" />
+
+<br>
+TEMAS:
+Tema classico:
+<img width="1280" height="921" alt="tema-classico" src="https://github.com/user-attachments/assets/09085b17-d3bf-4da7-bbe3-4325ca82e336" />
+<br>
+Tema neon: 
+<img width="1280" height="921" alt="tema-neon" src="https://github.com/user-attachments/assets/1ab6bc11-238a-404b-a0d3-ff7181759153" />
+<br>
+Tema cyberpunk: 
+<img width="1280" height="921" alt="tema-cyberpunk" src="https://github.com/user-attachments/assets/821f8046-3803-4325-887a-4eccb04ed0db" />
+<br>
 
 ## Autor
 
