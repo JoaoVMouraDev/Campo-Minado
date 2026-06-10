@@ -57,10 +57,10 @@ Os melhores tempos, o nome do jogador e o tema selecionado ficam salvos no `loca
 
 ## Pré-visualização
 
-<img width="292" height="195" alt="Tela inicial do Campo Minado" src="https://github.com/user-attachments/assets/10e8218d-79f5-4193-88ad-522a53c3a48a" />
+<img width="292" height="195" alt="Tela de vitoria do Campo Minado" src="<img width="1280" height="921" alt="ranking" src="https://github.com/user-attachments/assets/75890936-01d1-4685-b02e-2281ebd1bf2c"/>" />
 <br>
 
-<img width="457" height="489" alt="Partida de Campo Minado" src="https://github.com/user-attachments/assets/a535f9db-3b1b-415c-8808-30618277892e" />
+<img width="457" height="489" alt="Partida de Campo Minado" src="<img width="1280" height="921" alt="cronometro" src="https://github.com/user-attachments/assets/89843b61-fc7f-4284-b1f5-673128bbff93" />
 <br>
 
 <img width="445" height="485" alt="Resultado de uma partida" src="https://github.com/user-attachments/assets/b1abec2b-8a83-45b4-89ba-1eeae4b9af76" />
