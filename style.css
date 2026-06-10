@@ -1,5 +1,4 @@
-/* Importando uma fonte que lembra displays digitais */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
 
 :root {
   --bg-start: #1b2735;
@@ -16,44 +15,42 @@
 body.theme-classico {
   --bg-start: #c0c0c0;
   --bg-end: #808080;
-  --primary: #000080; /* Navy Blue */
+  --primary: #000080;
   --primary-rgb: 0, 0, 128;
   --button-text: #ffffff;
   --display-bg-start: #000;
   --display-bg-end: #000;
-  --led-color: #0f0; /* Verde */
+  --led-color: #0f0;
   --led-glow: rgba(0, 255, 0, 0.8);
 }
 
 body.theme-cyberpunk {
   --bg-start: #2b002b;
   --bg-end: #000000;
-  --primary: #ff00ff; /* Magenta */
+  --primary: #ff00ff;
   --primary-rgb: 255, 0, 255;
   --button-text: #000;
   --display-bg-start: #220022;
   --display-bg-end: #440044;
-  --led-color: #00ffff; /* Cyan */
+  --led-color: #00ffff;
   --led-glow: rgba(0, 255, 255, 0.8);
 }
 
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-#tabela{
-    display: none;
+#tabela {
+  display: none;
 }
 body {
   margin: 0;
   height: 100vh;
-  background: radial-gradient(circle at center, var(--bg-start) 0%, var(--bg-end) 100%);
+  background: radial-gradient(
+    circle at center,
+    var(--bg-start) 0%,
+    var(--bg-end) 100%
+  );
   background-attachment: fixed;
-}
-
-footer{
-  align-items: center;
-  padding: 700px;
-  font-size: 15px;
 }
 
 .neon-button {
@@ -76,96 +73,143 @@ footer{
 .neon-button:hover {
   background: var(--primary);
   color: var(--button-text);
-  box-shadow: 0 0 10px var(--primary),
-              0 0 40px var(--primary),
-              0 0 80px var(--primary);
+  box-shadow:
+    0 0 10px var(--primary),
+    0 0 40px var(--primary),
+    0 0 80px var(--primary);
   transition-delay: 0.1s;
 }
 
-
 h1 {
-    text-align: center;
+  text-align: center;
 }
-h2{
-    text-align: center;
+h2 {
+  text-align: center;
+}
+.game-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  z-index: 900;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: rgba(5, 8, 15, 0.94);
+  color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -16px);
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+.game-message.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.game-message.vitoria {
+  border-color: #ffd700;
+  box-shadow: 0 0 18px rgba(255, 215, 0, 0.45);
+}
+.game-message.derrota {
+  border-color: #ff3333;
+  box-shadow: 0 0 18px rgba(255, 51, 51, 0.45);
 }
 div {
-    text-align: center;
+  text-align: center;
 }
 table {
-    margin: 1em auto;
-    border-collapse: collapse;
+  margin: 1em auto;
+  border-collapse: collapse;
 }
 td {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    font-weight: bold;
-    box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
 }
-.blocked, .flag {
-    background-color: #bdbdbd;
-    border: 4px outset #ffffff; /* Relevo clássico mais forte */
-    cursor: pointer;
+.blocked,
+.flag {
+  background-color: #bdbdbd;
+  border: 4px outset #ffffff;
+  cursor: pointer;
 }
 .blank {
-    background-color: #bdbdbd;
-    border: 1px solid #7b7b7b; /* Célula aberta fica plana */
+  background-color: #bdbdbd;
+  border: 1px solid #7b7b7b;
 }
-.n1, .n2, .n3, .n4, .n5, .n6, .n7, .n8 {
-    background-color: #bdbdbd;
+.n1,
+.n2,
+.n3,
+.n4,
+.n5,
+.n6,
+.n7,
+.n8 {
+  background-color: #bdbdbd;
 }
 .n1 {
-    color: blue;
+  color: blue;
 }
 .n2 {
-    color: green;
+  color: green;
 }
 .n3 {
-    color: red;
+  color: red;
 }
 .n4 {
-    color: maroon;
+  color: maroon;
 }
 .n5 {
-    color: blueviolet;
+  color: blueviolet;
 }
 .n6 {
-    color: darkgoldenrod;
+  color: darkgoldenrod;
 }
 .n7 {
-    color: orange;
+  color: orange;
 }
 .n8 {
-    color: tomato;
+  color: tomato;
 }
 
 .display-box {
-    background: linear-gradient(135deg, var(--display-bg-start) 0%, var(--display-bg-end) 100%);
-    padding: 5px 15px;
-    border: 3px inset #808080;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 90px;
-    box-shadow: inset 0 0 10px #000;
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--display-bg-start) 0%,
+    var(--display-bg-end) 100%
+  );
+  padding: 5px 15px;
+  border: 3px inset #808080;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px;
+  box-shadow: inset 0 0 10px #000;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Efeito de reflexo no "vidro" do display */
 .display-box::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; height: 50%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
 }
 
 .led-digits {
   color: var(--led-color);
-  font-family: 'Orbitron', monospace;
+  font-family: "Orbitron", monospace;
   font-size: 30px;
   text-align: right;
   text-shadow: 0 0 10px var(--led-glow);
@@ -175,24 +219,24 @@ td {
 }
 
 .display-label {
-    font-size: 9px;
-    font-weight: bold;
-    color: #660000; /* Texto quase sumido no fundo, estilo display real */
-    letter-spacing: 1px;
-    margin-bottom: -2px;
+  font-size: 9px;
+  font-weight: bold;
+  color: #660000;
+  letter-spacing: 1px;
+  margin-bottom: -2px;
 }
 
 .neon-button.mini {
-    padding: 5px 10px;
-    font-size: 11px;
-    letter-spacing: 1px;
+  padding: 5px 10px;
+  font-size: 11px;
+  letter-spacing: 1px;
 }
 
 .painel {
   background-color: #bdbdbd;
   padding: 10px 20px;
   border: 5px outset #ffffff;
-  display: none; 
+  display: none;
   justify-content: space-between;
   align-items: center;
   margin: 10px auto;
@@ -201,201 +245,227 @@ td {
   border-radius: 4px;
 }
 
-/* Estilo para a bomba quando revelada */
 .blank[innerHTML*="💣"] {
-    background-color: red !important;
+  background-color: red !important;
 }
 
 .flag {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .high-scores {
-    margin-top: 30px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    border-radius: 10px;
-    color: var(--primary);
-    display: block; /* Muda para display de bloco */
-    margin: 30px auto; /* Centraliza horizontalmente e mantém a margem superior */
-    max-width: fit-content; /* Ajusta a largura ao conteúdo */
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  color: var(--primary);
+  display: block;
+  margin: 30px auto;
+  max-width: fit-content;
 }
 
 .score-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .score-item {
-    font-family: 'Orbitron', monospace;
-    border: 1px solid var(--primary);
-    padding: 5px 10px;
+  font-family: "Orbitron", monospace;
+  border: 1px solid var(--primary);
+  padding: 5px 10px;
 }
 
-.btn-limpar {
-    background: none;
-    border: none;
-    color: #ff3333;
-    font-size: 10px;
-    text-transform: uppercase;
-    margin-top: 10px;
-    cursor: pointer;
-    text-decoration: underline;
-    opacity: 0.7;
-}
-.btn-limpar:hover { opacity: 1; }
-
-/* Estilos para a lista de scores */
 .scores-list {
-    margin-top: 5px;
-    text-align: left; /* Alinha os scores à esquerda dentro do item */
-    min-height: 150px; /* Garante espaço para 10 scores */
-    overflow-y: auto; /* Adiciona scroll se houver muitos scores (embora limitado a 10) */
-    padding-right: 5px; /* Padding para a barra de rolagem */
+  margin-top: 5px;
+  text-align: left;
+  min-height: 150px;
+  overflow-y: auto;
+  padding-right: 5px;
 }
 
 .score-entry {
-    font-size: 14px;
-    margin-bottom: 2px;
-    padding: 2px 0;
-    border-bottom: 1px dotted rgba(var(--primary-rgb), 0.3);
+  font-size: 14px;
+  margin-bottom: 2px;
+  padding: 2px 0;
+  border-bottom: 1px dotted rgba(var(--primary-rgb), 0.3);
 }
 
 .score-entry:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
-/* Ajusta .score-item para melhor conter a lista */
 .score-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinha "Fácil:", "Médio:", "Difícil:" à esquerda */
-    min-width: 120px; /* Garante largura consistente */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 120px;
 }
 
-/* Animação para novo recorde */
-@keyframes record-pulse {
-}
-
-.new-record-anim {
-    animation: record-pulse 0.6s ease-in-out infinite;
-    z-index: 10;
-    background: rgba(var(--primary-rgb), 0.2) !important;
-}
-
-/* Efeito de brilho na célula da vitória */
 @keyframes win-pulse {
-    0% { box-shadow: 0 0 0px #fff; transform: scale(1); }
-    50% { box-shadow: 0 0 20px #fff, 0 0 30px #ffd700; transform: scale(1.2); z-index: 10; }
-    100% { box-shadow: 0 0 10px #ffd700; transform: scale(1.1); }
+  0% {
+    box-shadow: 0 0 0px #fff;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 0 20px #fff,
+      0 0 30px #ffd700;
+    transform: scale(1.2);
+    z-index: 10;
+  }
+  100% {
+    box-shadow: 0 0 10px #ffd700;
+    transform: scale(1.1);
+  }
 }
 
 .win-glow {
-    animation: win-pulse 0.8s ease-in-out forwards;
-    position: relative;
-    border: 2px solid #ffd700 !important;
+  animation: win-pulse 0.8s ease-in-out forwards;
+  position: relative;
+  border: 2px solid #ffd700 !important;
 }
 
-/* Efeito de sacudida (Shake) */
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 .shake-screen {
-  animation: shake 0.5s, loss-flash 0.5s;
+  animation:
+    shake 0.5s,
+    loss-flash 0.5s;
   animation-iteration-count: 1;
 }
 
 @keyframes loss-flash {
-  0% { 
+  0% {
     filter: sepia(1) hue-rotate(-50deg) saturate(5) brightness(0.7);
     box-shadow: inset 0 0 150px rgba(255, 0, 0, 0.8);
   }
-  100% { 
+  100% {
     filter: none;
     box-shadow: inset 0 0 0px transparent;
   }
 }
 
-/* Estilos para o Pop-up de Nome */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Garante que o pop-up fique acima de tudo */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
-    background: radial-gradient(circle at center, var(--bg-start) 0%, var(--bg-end) 100%);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px var(--primary);
-    text-align: center;
-    color: var(--primary);
-    max-width: 400px;
-    width: 90%;
-    position: relative;
+  background: radial-gradient(
+    circle at center,
+    var(--bg-start) 0%,
+    var(--bg-end) 100%
+  );
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--primary);
+  text-align: center;
+  color: var(--primary);
+  max-width: 400px;
+  width: 90%;
+  position: relative;
 }
 
 .modal-content h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: var(--primary);
-    text-shadow: 0 0 5px var(--primary);
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--primary);
+  text-shadow: 0 0 5px var(--primary);
 }
 
 .modal-content p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .neon-input {
-    width: calc(100% - 20px); /* Ajusta a largura considerando o padding */
-    padding: 10px;
-    margin-bottom: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid var(--primary);
-    border-radius: 5px;
-    color: var(--primary);
-    font-size: 1.1em;
-    text-align: center;
-    outline: none; /* Remove o contorno padrão ao focar */
-    box-shadow: 0 0 5px var(--primary);
-    transition: all 0.3s ease;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  color: var(--primary);
+  font-size: 1.1em;
+  text-align: center;
+  outline: none;
+  box-shadow: 0 0 5px var(--primary);
+  transition: all 0.3s ease;
 }
 
 .neon-input:focus {
-    box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary); /* Brilho maior ao focar */
+  box-shadow:
+    0 0 10px var(--primary),
+    0 0 20px var(--primary);
 }
 
 .modal-content .neon-button {
-    padding: 10px 25px;
-    font-size: 1em;
+  padding: 10px 25px;
+  font-size: 1em;
 }
 
-/* Animação de Brilho Dourado para o Título de Recorde */
 @keyframes golden-glow {
-    0% { text-shadow: 0 0 5px #ffd700; color: #ffd700; transform: scale(1); }
-    50% { text-shadow: 0 0 20px #ffd700, 0 0 30px #fff; color: #fff; transform: scale(1.1); }
-    100% { text-shadow: 0 0 5px #ffd700; color: #ffd700; transform: scale(1); }
+  0% {
+    text-shadow: 0 0 5px #ffd700;
+    color: #ffd700;
+    transform: scale(1);
+  }
+  50% {
+    text-shadow:
+      0 0 20px #ffd700,
+      0 0 30px #fff;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  100% {
+    text-shadow: 0 0 5px #ffd700;
+    color: #ffd700;
+    transform: scale(1);
+  }
 }
 
 .new-record-title {
-    animation: golden-glow 1.2s ease-in-out infinite;
+  animation: golden-glow 1.2s ease-in-out infinite;
 }

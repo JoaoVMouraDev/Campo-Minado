@@ -1,94 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-<head>
+  <head>
     <title>Campo Minado</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" href="bomba.png" type="image/png">
+    <link rel="icon" href="bomba.png" type="image/png" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <h1>Campo Minado</h1>
+    <div id="gameMessage" class="game-message" aria-live="polite"></div>
     <div class="high-scores">
-        <h3>🏆 Melhores Tempos</h3>
-        <div class="score-grid">
-            <div class="score-item">
-                Fácil:
-                <div id="scores-list-0" class="scores-list">
-                    <div class="score-entry">--</div>
-                </div>
-            </div>
-            <div class="score-item">
-                Médio:
-                <div id="scores-list-1" class="scores-list">
-                    <div class="score-entry">--</div>
-                </div>
-            </div>
-            <div class="score-item">
-                Difícil:
-                <div id="scores-list-2" class="scores-list">
-                    <div class="score-entry">--</div>
-                </div>
-            </div>
+      <h3>🏆 Melhores Tempos</h3>
+      <div class="score-grid">
+        <div class="score-item">
+          Fácil:
+          <div id="scores-list-0" class="scores-list">
+            <div class="score-entry">--</div>
+          </div>
         </div>
+        <div class="score-item">
+          Médio:
+          <div id="scores-list-1" class="scores-list">
+            <div class="score-entry">--</div>
+          </div>
+        </div>
+        <div class="score-item">
+          Difícil:
+          <div id="scores-list-2" class="scores-list">
+            <div class="score-entry">--</div>
+          </div>
+        </div>
+      </div>
     </div>
-    <table id="tabela">
-    </table>
+    <table id="tabela"></table>
     <div class="painel">
-        <div class="display-box">
-            <span class="display-label">BOMBAS</span>
-            <div id="contadorBandeiras" class="led-digits">000</div>
-        </div>
-        
-        <button id="jogarNovamente" class="neon-button mini" style="display: none;" onclick="reiniciarJogo()">REINICIAR</button>
+      <div class="display-box">
+        <span class="display-label">BOMBAS</span>
+        <div id="contadorBandeiras" class="led-digits">000</div>
+      </div>
 
-        <div class="display-box">
-            <span class="display-label">TEMPO</span>
-            <div id="timer" class="led-digits">000</div>
-        </div>
+      <button
+        id="jogarNovamente"
+        class="neon-button mini"
+        style="display: none"
+        onclick="reiniciarJogo()"
+      >
+        REINICIAR
+      </button>
+
+      <div class="display-box">
+        <span class="display-label">TEMPO</span>
+        <div id="timer" class="led-digits">000</div>
+      </div>
     </div>
     <div>
-        <label>Dificuldade:</label>
-        <select id="dificuldade">
-            <option value="0" selected>Fácil</option>
-            <option value="1">Médio</option>
-            <option value="2">Difícil</option>
-        </select><br><br>
-        <label>Tema:</label>
-        <select id="tema">
-            <option value="neon" selected>Neon</option>
-            <option value="classico">Clássico</option>
-            <option value="cyberpunk">Cyberpunk</option>
-        </select><br><br>
-        <button id="botaoJogar" class="neon-button" onclick="mostrarTabela()">Jogar</button>
+      <label>Dificuldade:</label>
+      <select id="dificuldade">
+        <option value="0" selected>Fácil</option>
+        <option value="1">Médio</option>
+        <option value="2">Difícil</option></select
+      ><br /><br />
+      <label>Tema:</label>
+      <select id="tema">
+        <option value="neon" selected>Neon</option>
+        <option value="classico">Clássico</option>
+        <option value="cyberpunk">Cyberpunk</option></select
+      ><br /><br />
+      <button id="botaoJogar" class="neon-button" onclick="mostrarTabela()">
+        Jogar
+      </button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
 
-    <!-- Pop-up para nome do jogador -->
-    <div id="name-popup-overlay" class="modal-overlay" style="display: none;">
-        <div class="modal-content">
-            <h3>Insira seu nome</h3>
-            <p id="rankInfo"></p>
-            <input type="text" id="playerNameInput" maxlength="15" placeholder="Seu nome" class="neon-input">
-            <button class="neon-button" onclick="salvarNomeEScore()">Salvar</button>
-        </div>
+    <div id="name-popup-overlay" class="modal-overlay" style="display: none">
+      <div class="modal-content">
+        <h3>Insira seu nome</h3>
+        <p id="rankInfo"></p>
+        <input
+          type="text"
+          id="playerNameInput"
+          maxlength="15"
+          placeholder="Seu nome"
+          class="neon-input"
+        />
+        <button class="neon-button" onclick="salvarNomeEScore()">Salvar</button>
+      </div>
     </div>
-</body>
-
-
-
-<!---
-
-<footer>
- <p>  &copy;Todos os direitos reservados, João Victor "Pandazera2" Moura da Silva</p>
-
-</footer>
-
---->
-
-
+  </body>
 </html>
