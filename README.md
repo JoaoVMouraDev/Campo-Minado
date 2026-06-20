@@ -67,9 +67,9 @@ Tela de Derrota:
 Tela mostrando o cronometro:
 <img width="1280" height="921" alt="cronometro" src="https://github.com/user-attachments/assets/a850bc03-1669-468d-8bdc-c8cbb45a2f2e" />
 <br>
+<br>
 
 TEMAS:
-<br>
 <br>
 <br>
 
