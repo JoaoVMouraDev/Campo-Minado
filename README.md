@@ -1,10 +1,10 @@
-# Campo Minado
+# 🎮 Campo Minado
 
-Uma versão web do clássico Campo Minado, desenvolvida com HTML, CSS e JavaScript puro.
+Versão moderna do clássico Campo Minado desenvolvida com JavaScript puro, contando com ranking de jogadores, persistência de recordes, múltiplos temas visuais e primeiro clique sempre seguro.
 
-O objetivo é revelar todas as células seguras sem clicar em uma bomba. Use os números exibidos no tabuleiro para descobrir quantas bombas existem nas células vizinhas.
+🔗 Demo: https://campo-minado-seven.vercel.app
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
 - Três níveis de dificuldade: Fácil, Médio e Difícil
 - Primeiro clique sempre seguro
@@ -12,12 +12,12 @@ O objetivo é revelar todas as células seguras sem clicar em uma bomba. Use os 
 - Cronômetro e contador de bombas
 - Expansão automática de áreas vazias
 - Ranking com os 10 melhores tempos de cada dificuldade
-- Nome do jogador e recordes salvos no navegador
-- Temas Neon, Clássico e Cyberpunk
+- Persistência de recordes e preferências do jogador
+- Temas: Neon, Clássico e Cyberpunk
 - Efeitos sonoros e animações de vitória e derrota
-- Botão para reiniciar a partida
+- Reinício rápido da partida
 
-## Como jogar
+## 🎯 Como jogar
 
 1. Escolha a dificuldade e o tema.
 2. Clique em **Jogar** para iniciar.
@@ -25,37 +25,32 @@ O objetivo é revelar todas as células seguras sem clicar em uma bomba. Use os 
 4. Use o botão direito para colocar ou remover uma bandeira.
 5. Revele todas as células que não possuem bombas para vencer.
 
-## Executar localmente
+## 🛠 Tecnologias
 
-Clone o repositório:
-
-```bash
-git clone https://github.com/JoaoVMouraDev/Campo-Minado.git
-cd Campo-Minado
-```
-
-Abra o arquivo `index.html` no navegador.
-
-Também é possível iniciar um servidor local:
-
-```bash
-npx serve .
-```
-
-## Tecnologias
-
+- JavaScript
 - HTML5
 - CSS3
-- JavaScript
 - LocalStorage
 - Canvas Confetti
 - Party.js
+- Vercel
 
-## Armazenamento
+## 🚀 Desafios Técnicos
 
-Os melhores tempos, o nome do jogador e o tema selecionado ficam salvos no `localStorage` do navegador. Por isso, os recordes são individuais para cada navegador/dispositivo.
+- Implementação do primeiro clique sempre seguro
+- Geração aleatória e balanceada do tabuleiro
+- Sistema de ranking persistido em LocalStorage
+- Expansão automática de células vazias
+- Gerenciamento dos diferentes temas visuais
+- Controle de estado da partida e condições de vitória/derrota
 
-## Pré-visualização
+## 💾 Armazenamento
+
+Os melhores tempos, o nome do jogador e as preferências visuais ficam armazenados no LocalStorage do navegador. Dessa forma, cada dispositivo mantém seu próprio histórico de recordes.
+
+## 📸 Pré-visualização
+
+Imagens da aplicação disponíveis abaixo.
 
 Tela do Ranking: 
 <img width="1280" height="921" alt="ranking" src="https://github.com/user-attachments/assets/75890936-01d1-4685-b02e-2281ebd1bf2c"/>
