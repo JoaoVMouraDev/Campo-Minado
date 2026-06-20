@@ -58,16 +58,16 @@ Tela do Ranking:
 
 Tela de Vitória: 
 <img width="1280" height="921" alt="vitoria" src="https://github.com/user-attachments/assets/a863a465-a544-49ab-843b-ad8d98104957" />
-
 <br>
+
 Tela de Derrota:
 <img width="1222" height="939" alt="image" src="https://github.com/user-attachments/assets/cd206c2b-d1e4-429b-833c-a576141b371a" />
-
 <br>
+
 Tela mostrando o cronometro:
 <img width="1280" height="921" alt="cronometro" src="https://github.com/user-attachments/assets/a850bc03-1669-468d-8bdc-c8cbb45a2f2e" />
-
 <br>
+
 TEMAS:
 <br>
 <br>
@@ -76,9 +76,11 @@ TEMAS:
 Tema Clássico:
 <img width="1280" height="921" alt="tema-classico" src="https://github.com/user-attachments/assets/09085b17-d3bf-4da7-bbe3-4325ca82e336" />
 <br>
+
 Tema Neon: 
 <img width="1280" height="921" alt="tema-neon" src="https://github.com/user-attachments/assets/1ab6bc11-238a-404b-a0d3-ff7181759153" />
 <br>
+
 Tema Cyberpunk: 
 <img width="1280" height="921" alt="tema-cyberpunk" src="https://github.com/user-attachments/assets/821f8046-3803-4325-887a-4eccb04ed0db" />
 <br>
